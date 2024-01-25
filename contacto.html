@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es" class="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlos Ibarra Fotografo Profesional - Peru</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+   
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/contacto.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navDesk">
+            <div class="logoNav"> C<span>I</span></div>
+            <ul class="navItems">
+                <li><a href="./index.html">HOME</a> </li>
+                <li><a href="./fotos.html" class="position-relative active">FOTOS</a> </li>
+                <li><a href="./videos.html" class="position-relative">VIDEOS</a> </li>
+                <li><a href="./sobreMi.html" class="position-relative">SOBRE MI</a> </li>
+                <li><a href="#" class="position-relative">CONTACTO</a> </li>
+            </ul>
+        </nav>
+        <nav class="navMobile">
+            <div class="logoNav"> C<span>I</span></div>
+            <div class="btnNav" onclick="activarOrDesactivar()">
+                <span class="burgerT"></span>
+                <span class="burgerM"></span>
+                <span class="burgerB"></span>
+            </div>
+            <div class="navSlide">
+                <ul class="navItems">
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./fotos.html" class="active">FOTOS</a></li>
+                    <li><a href="./videos.html">VIDEOS</a></li>
+                    <li><a href="./sobreMi.html">SOBRE MI</a></li>
+                    <li><a href="#">CONTACTO</a> </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="espacio"></div>
+    <main id="app" class="container">
+        <div class="stickyWhatsapp"> <i class='bx bxl-whatsapp' @click="redireccionar('WHATSAPP')"></i></div>
+
+        <div class="contactos">
+            <h2>Estamos en <span>contacto</span></h2>
+            <div class="telefono">
+                <i class='bx bxs-phone'></i>
+                <section>
+                    <p>Tel:</p>
+                    <p><a href="tel:+51 982940111">+ 51 982 940 111</a></p>
+                    <p><a href="tel:+34 652683415">+ 34 652 683 415</a></p>
+                </section>
+            </div>
+            <div class="email">
+                <i class='bx bxs-envelope'></i>
+                <section>
+                    <p>E-mail:</p>
+                    <p><a href="mailto:ibarradigital@gmail.com">ibarradigital@gmail.com</a></p>
+                </section>
+            </div>
+            <div class="direccion">
+                <i class='bx bxs-location-plus'></i>
+                <section>
+                    <p>Direccion:</p>
+                    <p>Barcelona, Goya 16 - Lima - Sucre 321</p>
+                </section>
+            </div>
+        </div>
+        <div class="follow">
+            <h2>Follow <span>Us</span></h2>
+            <div class="redSocial" > <i class='bx bxl-instagram'></i>
+                <p><a href="https://www.instagram.com/Mr_.ibarra" target="_blank">INSTAGRAM</a></p>
+            </div>
+            <div class="redSocial" ><i class='bx bxl-vimeo'></i>
+                <p><a href="https://vimeo.com/carlosibarrapro" target="_blank">VIMEO</a></p>
+            </div>
+            <div class="redSocial" ><i class='bx bxl-linkedin-square'></i>
+                <p><a href="https://www.linkedin.com/in/carlosibarrapro/" target="_blank">LINKEDIN</a></p>
+            </div>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.846823629148!2d2.1573526001642547!3d41.39913278156345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2964aff9a45%3A0xafaae39e7a7e0dbd!2sCarrer%20de%20Goya%2C%2016%2C%2008012%20Barcelona%2C%20Espa%C3%B1a!5e0!3m2!1ses-419!2sar!4v1655423951428!5m2!1ses-419!2sar" class="map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </main>
+
+
+
+    </div>
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KB04P4P15R"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-KB04P4P15R');
+    </script>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/vue@3"></script>
+
+    <script src="./scripts/data/videos.js"></script>
+    <script src="./scripts/data/imagenes.js"></script>
+    <script src="./scripts/main.js"></script>
+</body>
+
+</html>
